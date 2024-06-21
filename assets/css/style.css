@@ -21,7 +21,10 @@ body {
 .boxes-background {
     background-color: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
+}
 
+.box-shadow {
+    box-shadow: 5px 5px 3px #888888;
 }
 
 .image {
