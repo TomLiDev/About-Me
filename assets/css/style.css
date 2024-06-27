@@ -1,12 +1,20 @@
+/* General Styling*/
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-image: url(../images/background3.jpg);
+    background-image: url(../images/backgroun5.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+}
+
+/* Nav bar styling */
+
+.navbar-brand {
+    padding-left: 5%;
 }
 
 .title-container {
