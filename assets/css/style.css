@@ -5,11 +5,19 @@
     margin: 0;
 }
 
+* {
+    color: rgb(4, 47, 56);
+}
+
 body {
     width: 100%;
     background-image: url(/assets/images/backgroun5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.my-center {
+    justify-content: center;
 }
 
 /* Nav bar styling */
@@ -28,8 +36,9 @@ body {
 }
 
 .nav-item:hover {
-    border-radius: 5%;
-    border: 1px, solid, white;
+    transition: 1s;
+    border-radius: 10px;
+    border: 2px, solid, white;
 }
 
 .title-container {
@@ -41,8 +50,15 @@ body {
     border-bottom: 1px solid black;
 }
 
+.sub-title-box {
+    text-align: center;
+    padding-top: 2%;
+    width: 20%;
+    margin-top: 20px;
+}
+
 .boxes-background {
-    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgb(235, 252, 254);
     border-radius: 10px;
     border: 1px, solid, black;
 }
