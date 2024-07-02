@@ -210,5 +210,27 @@ footer {
 
 @media screen and (max-width: 770px) {
     
+    .image-col {
+        display: flex;
+    }
 
+    .image {
+        max-width: 250px;
+    }
+
+    .title-container {
+        width: 300px;
+    }
+
+    .w-80 {
+        width: 95%;
+    }
+
+    .career-title {
+        margin-top: 5px;
+    }
+
+    .timeline-container {
+        height: 200px;
+    }
 }
