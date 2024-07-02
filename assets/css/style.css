@@ -32,27 +32,42 @@ body {
 
 .navbar {
     background-color: rgb(4, 47, 56);
+    line-height: 50px;
+    font-size: 150%;
 }
 
 .navbar-brand {
     padding-left: 5%;
+    font-size: 150%;
 }
 
 .nav-item {
-    border: 1px, solid, transparent;
-    background-color: rgb(4, 47, 56);
-    padding-left: 20px;
-    padding: 5px;
+    margin-left: 30px;
+    line-height: 30px;
 }
 
-.nav-item:hover {
+.nav-link {
+    border: 2px, solid, transparent;
+    background-color: rgb(4, 47, 56);
+}
+
+.nav-link:hover {
     transition: 1s;
     border-radius: 10px;
     border: 2px, solid, white;
 }
 
-.nav-link {
-    padding-left: 10px;
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+}
+
+.mail-container>i {
+    font-size: 150%;
+    color: aliceblue;
 }
 
 /* Main Body and Containers Styling*/
