@@ -20,19 +20,29 @@ body {
     justify-content: center;
 }
 
+.mt-20 {
+    margin-top: 20px;
+}
+
+.w-80 {
+    width: 80%;
+}
+
 /* Nav bar styling */
 
 .navbar {
-    height: 60px;
+    background-color: rgb(4, 47, 56);
 }
 
 .navbar-brand {
-    padding: 5%;
+    padding-left: 5%;
 }
 
 .nav-item {
-    margin-left: 30px;
     border: 1px, solid, transparent;
+    background-color: rgb(4, 47, 56);
+    padding-left: 20px;
+    padding: 5px;
 }
 
 .nav-item:hover {
@@ -41,14 +51,20 @@ body {
     border: 2px, solid, white;
 }
 
+.nav-link {
+    padding-left: 10px;
+}
+
+/* Main Body and Containers Styling*/
+
 .title-container {
     margin-top: 10px;
     padding: 20px;
     width: 400px;
 }
 
-.job-title {
-    border-bottom: 1px solid black;
+.my-border-bottom {
+    border-bottom: 1px solid rgb(4, 47, 56);
 }
 
 .sub-title-box {
@@ -56,6 +72,11 @@ body {
     padding-top: 2%;
     width: 20%;
     margin-top: 20px;
+}
+
+.career-title {
+    margin-top: 20px;
+
 }
 
 .boxes-background {
@@ -73,11 +94,20 @@ body {
     border-radius: 10px;
 }
 
+.inner-box {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+.image-col {
+    display: contents;
+}
+
 .image { 
     width: 100%;
     height: auto;
     border-radius: 50%;
-    max-width: 350px;
+    max-width: 300px;
 }
 
 .projects-container {
@@ -89,11 +119,13 @@ body {
     text-align: center;
 }
 
-.w-80 {
-    width: 80%;
-}
-
 /* Timeline Styling */
+
+.timeline-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .timeline-container {
     width: 100%;
@@ -145,9 +177,9 @@ footer {
 /* Below code taken from stackoverflow, not original */
 
 .border-box {
-    --b: 5px;   /* thickness of the border */
+    --b: 12px;   /* thickness of the border */
     --c: red;   /* color of the border */
-    --w: 20px;  /* width of border */
+    --w: 50px;  /* width of border */
     --r: 25px;  /* radius */
     
   
@@ -173,3 +205,10 @@ footer {
     -webkit-mask-composite: destination-out;
             mask-composite: exclude;
   }
+
+/* Styling for screen sizes smaller than 770px */
+
+@media screen and (max-width: 770px) {
+    
+
+}
