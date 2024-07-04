@@ -20,6 +20,10 @@ body {
     justify-content: center;
 }
 
+.my-p-2 {
+    padding: 20px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
@@ -33,17 +37,20 @@ body {
 .navbar {
     background-color: rgb(4, 47, 56);
     line-height: 50px;
-    font-size: 150%;
+    font-size: 120%;
+    display: flex;
+
 }
 
 .navbar-brand {
     padding-left: 5%;
     font-size: 150%;
+    padding-right: 5px;
 }
 
 .nav-item {
-    margin-left: 30px;
     line-height: 30px;
+    margin-left: 30px;
 }
 
 .nav-link {
@@ -57,12 +64,29 @@ body {
     border: 2px, solid, white;
 }
 
-.contact {
+.contact-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border: 2px, solid, transparent;
+    background-color: rgb(4, 47, 56);
+    line-height: 5px;
+    padding: 10px;
     position: absolute;
     right: 5%;
+}
+
+.contact-container:hover {
+    transition: 1s;
+    border-radius: 10px;
+    border: 2px, solid, white;
+}
+
+.contact {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 10px;
 }
 
 .mail-container>i {
@@ -110,7 +134,7 @@ body {
 }
 
 .inner-box {
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255, 0.9);
     padding: 10px;
 }
 
@@ -221,16 +245,73 @@ footer {
             mask-composite: exclude;
   }
 
+/* Styling for screen sizes smaller than 1000px, just needed for picture */
+
+@media screen and (max-width: 1200px) {
+
+    .image {
+        max-width: 240px;
+    }
+
+    .intro-text-container {
+        width: 65%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .image {
+        max-width: 220px;
+    }
+    
+}
+
+
 /* Styling for screen sizes smaller than 770px */
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 800px) {
+
+    .my-p-2 {
+        padding: 5px;
+    }
+
+    .navbar {
+        font-size: 100%;
+    }
+
+    .contact-container {
+        position: relative;
+        line-height: normal;
+        right: 0;
+        padding: 0px;
+    }
+
+    .contact {
+        padding: 0px;
+    }
+
+    .contact:hover {
+        text-decoration: underline;
+    }
+
+    .nav-link:hover {
+        border: 2px, solid, transparent;
+        transition: 3s;
+        text-decoration: underline;
+    }
+    
+    .contact-container:hover {
+        transition: 3s;
+        border: 2px, solid, transparent;
+    }
+
+    .mail-container {
+        display: none;
+    }
     
     .image-col {
         display: flex;
-    }
-
-    .image {
-        max-width: 250px;
     }
 
     .title-container {
@@ -247,5 +328,33 @@ footer {
 
     .timeline-container {
         height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .my-p-2 {
+        padding: 0px;
+    }
+
+    .intro-text-container {
+        width: 60%;
+    }
+    
+    .mt-20 {
+        margin-top: 10px;
+    }
+
+    .career-title {
+        margin-top: 0px;
+    }
+
+    .timeline-container {
+        font-size: small;
+    }
+
+    .table {
+        font-size: small;
     }
 }
