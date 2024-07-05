@@ -172,7 +172,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
 .timeline {
@@ -332,14 +331,32 @@ footer {
 
 }
 
+/* Styling for screen sizes smaller than 600px */
+
 @media screen and (max-width: 600px) {
 
     .my-p-2 {
         padding: 0px;
     }
 
+    h1 {
+        font-size: large;
+    }
+
+    h4 {
+        font-size: medium;
+    }
+
     .intro-text-container {
         width: 60%;
+    }
+
+    .title-container {
+        width: 200px;
+    }
+
+    .about-me-row {
+        font-size: small;
     }
     
     .mt-20 {
@@ -357,4 +374,48 @@ footer {
     .table {
         font-size: small;
     }
+
+}
+
+/* Styling for screen sizes smaller than 400px */
+
+@media screen and (max-width: 400px) {
+
+    .mp-top-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-col {
+        display: contents;
+    }
+    .image {
+        max-width: 190px;
+    }
+
+    .intro-text-container {
+        width: 90%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timeline-container {
+        height: auto;
+    }
+
+    .timeline {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    .table {
+        font-size: 60%;
+    }
+
+    .skills-container {
+        overflow-x:auto;
+    }
+
 }
