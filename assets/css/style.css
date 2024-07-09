@@ -168,10 +168,11 @@ body {
 
 .timeline-container {
     width: 95%;
-    height: 240px;
+    height: 220px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .timeline {
@@ -192,10 +193,15 @@ body {
 .tl-item {
     border: 1px, solid, black;
     padding: 1%;
+    height: 150px;
 }
 
 .tl-item>h6 {
     text-decoration: underline;
+}
+
+.tl-item>p {
+    padding: 10px;
 }
 
 .tl-spacer {
@@ -371,6 +377,10 @@ footer {
         height: 200px;
     }
 
+    .tl-item>p {
+        padding: 5px;
+    }
+
     .projects-title-container {
         font-size: medium;
         width: 80%;
@@ -435,8 +445,21 @@ footer {
         margin-top: 0px;
     }
 
+    .timeline-outer {
+        width: 97%;
+    }
+
     .timeline-container {
         font-size: small;
+        width: 100%;
+    }
+
+    .tl-item {
+        height: 120px;
+    }
+
+    .tl-item>p{
+        padding: 3px;
     }
 
     .table {
@@ -502,6 +525,11 @@ footer {
     .timeline {
         flex-direction: column-reverse;
         margin-top: 10px;
+    }
+
+    .tl-item {
+        height: 100px;
+        width: 80%;
     }
 
     .table {
