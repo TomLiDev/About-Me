@@ -122,7 +122,7 @@ body {
 }
 
 .career-title {
-    margin-top: 20px;
+    margin-top: 5px;
 
 }
 
@@ -163,10 +163,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
 }
 
 .timeline-container {
-    width: 100%;
+    width: 95%;
     height: 240px;
     display: flex;
     flex-direction: row;
@@ -457,7 +458,7 @@ footer {
     }
 
     .single-project-text {
-        height: 30px;
+        height: 40px;
     }
 
     .project-buttons {
@@ -509,6 +510,10 @@ footer {
 
     .skills-container {
         overflow-x:auto;
+    }
+
+    .single-project-text {
+        height: auto;
     }
 
 }
