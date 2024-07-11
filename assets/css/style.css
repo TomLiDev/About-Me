@@ -231,6 +231,10 @@ body {
     margin-bottom: 5%;
 }
 
+#first-job-detail {
+    display: none;
+}
+
 footer {
     width: 100%;
     display: flex;
