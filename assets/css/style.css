@@ -9,6 +9,18 @@
     color: rgb(4, 47, 56);
 }
 
+h1, h2, h3, h5 {
+    font-weight: 300;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+* {
+    font-weight: 400;
+}
+
 body {
     width: 100%;
     background-image: url(/assets/images/backgroun5.jpg);
@@ -182,12 +194,21 @@ body {
     align-items: center;
     width: 100%;
 }
+
+.timeline li {
+    list-style: none;
+}
   
-.timeline li{
+.timeline-button{
     list-style: none;
     position: relative;
     text-align: center;
     text-transform: uppercase;
+}
+
+.timeline-button:hover {
+    transition: 1s;
+    background-color: rgb(173, 216, 224);
 }
 
 .tl-item {
@@ -529,7 +550,7 @@ footer {
 
     .tl-item {
         height: 100px;
-        width: 80%;
+        width: 180px;
     }
 
     .table {
