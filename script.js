@@ -7,14 +7,22 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(sections)
         console.log("Only if home")
         for (i = 0; i < sections.length; i++) {
-            sections[i].addEventListener("click", showHistory)
+            sections[i].addEventListener("click", selectDetail)
         }
     }
 	}
 );
 
-function showHistory() {
-    console.log("Inside show history")
-    item = document.getElementById("first-job-detail");
-    item.style.display = "block";
+function selectDetail() {
+    console.log("Inside select detail")
+    thing = this.id+"-detail"
+    console.log(thing)
+    document.getElementById(thing);
+    sections = document.getElementsByClassName("job-detail");
+    for (i = 0; i <sections.length; i++) {
+        if (sections[i].id === thing) {
+            console.log("yes")
+            sections[i].style.display = "flex";
+        }
+    }
 }

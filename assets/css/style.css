@@ -214,7 +214,11 @@ body {
 .tl-item {
     border: 1px, solid, black;
     padding: 1%;
-    height: 150px;
+    height: 130px;
+}
+
+.tl-item-container {
+    width: 30%;
 }
 
 .tl-item>h6 {
@@ -229,6 +233,31 @@ body {
     width: 5%;
     border-bottom: 1px solid black;
     margin-bottom: 5%;
+}
+
+.job-detail {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+#job-details-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#fourth-job-detail {
+    display: none;
+}
+
+#third-job-detail {
+    display: none;
+}
+
+#second-job-detail {
+    display: none;
 }
 
 #first-job-detail {
@@ -550,11 +579,17 @@ footer {
     .timeline {
         flex-direction: column-reverse;
         margin-top: 10px;
+        align-items: center;
+        justify-content: center;
     }
 
     .tl-item {
         height: 100px;
         width: 180px;
+    }
+
+    .tl-item-container {
+        width: auto;
     }
 
     .table {
