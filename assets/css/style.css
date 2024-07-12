@@ -217,10 +217,6 @@ body {
     height: 130px;
 }
 
-.tl-item-container {
-    width: 30%;
-}
-
 .tl-item>h6 {
     text-decoration: underline;
 }
@@ -240,6 +236,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2%;
+    background-color: rgb(173, 216, 224);
 }
 
 #job-details-row {
