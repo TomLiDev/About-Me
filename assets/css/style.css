@@ -233,7 +233,6 @@ body {
 
 .job-detail {
     width: 90%;
-    display: flex;
     flex-direction: column;
     padding: 2%;
     background-color: rgb(173, 216, 224);
@@ -604,10 +603,11 @@ footer {
     .job-detail {
         font-size: smaller;
         max-width: 90%;
-        max-height: fit-content;
+        max-height: 95%;
         position: fixed;
         top: 5%;
         left: 5%;
+        overflow-y: auto;
     }
 
     .job-detail>h4 {
