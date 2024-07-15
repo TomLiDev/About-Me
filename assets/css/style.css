@@ -601,4 +601,17 @@ footer {
         height: auto;
     }
 
+    .job-detail {
+        font-size: smaller;
+        max-width: 90%;
+        max-height: fit-content;
+        position: fixed;
+        top: 5%;
+        left: 5%;
+    }
+
+    .job-detail>h4 {
+        font-size: medium;
+    }
+
 }
