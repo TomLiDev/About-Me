@@ -180,7 +180,7 @@ body {
 
 .timeline-container {
     width: 95%;
-    height: 220px;
+    height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -234,8 +234,7 @@ body {
 .job-detail {
     width: 90%;
     flex-direction: column;
-    padding: 2%;
-    background-color: rgb(173, 216, 224);
+    padding: 5%;
 }
 
 #job-details-row {
@@ -322,6 +321,10 @@ footer {
 
 #projects-title {
     padding: 20px;
+}
+
+.single-project-container {
+    padding-bottom: 20px;
 }
 
 .single-project-title {
