@@ -175,6 +175,10 @@ body {
     justify-content: center;
 }
 
+.border-right {
+    border-right: 1px solid rgb(4, 47, 56);
+}
+
 .skills-icon-container {
     width: 90%;
     display: flex;
@@ -189,12 +193,43 @@ body {
 
 .skill-list {
     list-style: none;
+    padding-left: 0;
+}
+
+.skill-list>li>i {
+    padding: 10px;
+    font-size: 200%;
+}
+
+.fa-brands {
+    vertical-align: middle;
+}
+
+.fa-solid {
+    font-size: 200%;
+    vertical-align: middle;
+}
+
+.skill-sub-title>h6 {
+    margin-left: 5px;
+}
+
+li>img {
+    max-width: 50px;
+    padding: 10px;
+    color: rgb(4, 47, 56);
 }
 
 .skills-inner-box {
     display: flex;
     flex-direction: row;
     width: 100%;
+}
+
+.skill-sub-title {
+    display: flex;
+    align-items: center;
+    height: 70px;
 }
 
 /* Timeline Styling */
@@ -488,6 +523,22 @@ footer {
         font-size: large;
     }
 
+    .skill-list>li>i {
+        font-size: 150%;
+    }
+    
+    .fa-solid {
+        font-size: 150%;
+    }
+    
+    li>img {
+        max-width: 40px;
+    }
+
+    .skill-sub-title>img {
+        max-width: 40px;
+    }
+
 }
 
 /* Styling for screen sizes smaller than 600px */
@@ -573,6 +624,33 @@ footer {
         padding-bottom: 10px;
     }
 
+    .skill-sub-title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skill-list>li>i {
+        padding: 5px;
+    }
+
+    li>img {
+        padding: 5px;
+        max-width: 35px;
+    }
+
+    .skills-col {
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .skill-sub-title>img {
+        max-width: 30px;
+    }
+
+    .skill-sub-title>h6 {
+        font-size: small;
+    }
+
 }
 
 /* Styling for screen sizes smaller than 400px */
@@ -643,6 +721,23 @@ footer {
 
     .job-detail>h4 {
         font-size: medium;
+    }
+
+    .skills-inner-box {
+        flex-direction: column;
+    }
+
+    .border-right {
+        border-right: none;
+    }
+
+    .skill-sub-title {
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    .skills-col {
+        border-bottom: 1px solid rgb(4, 47, 56);
     }
 
 }
