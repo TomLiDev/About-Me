@@ -409,6 +409,16 @@ footer {
     width: 80%;
 }
 
+/* Styling for Contact Page */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    
+}
+
 /* Styling for screen sizes smaller than 1000px, just needed for picture */
 
 @media screen and (max-width: 1200px) {

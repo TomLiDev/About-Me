@@ -43,11 +43,36 @@
             </div>
         </nav>
 
+        <!-- Contact Form -->
+        <div class="form-outer">
+            <form method="get" name="contact_form" action="php/test.php" class="form">
+                Your Name:
+                <input type="text" name="name">
+
+                Email Address:
+                <input type="text" name="email">
+
+                Message:
+                <textarea name="message"></textarea>
+
+                <input type="submit" value="Submit" name="contact_form">
+            </form>
+        </div>	
+
         <!-- Footer -->
         <footer>
             <a href="https://www.facebook.com" class="footer-item p-3" target="_blank" rel="noopener" aria-label="Visit our Facebook page" ><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.linkedin.com" class="footer-item p-3" target="_blank" rel="noopener" aria-label="Visit our Instagram page"><i class="fa-brands fa-linkedin"></i></a>
         </footer>
         <script src="script.js"></script>
+
+        <!-- Below scipt is only used to validate contact form -->
+        <script language="JavaScript">
+            var frmvalidator  = new Validator("contactform");
+            frmvalidator.addValidation("name","req","Please provide your name");
+            frmvalidator.addValidation("email","req","Please provide your email");
+            frmvalidator.addValidation("email","email",
+              "Please enter a valid email address");
+        </script>
     </body>
 </html>
