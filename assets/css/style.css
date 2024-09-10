@@ -23,7 +23,7 @@ h4 {
 
 body {
     width: 100%;
-    background-image: url(/assets/images/backgroun5.jpg);
+    background-image: url(../images/backgroun5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
